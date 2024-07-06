@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ახალი ამბების შექმნა</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="language-switcher">
+        <button onclick="location.href='post.html'">EN</button>
+        <button onclick="location.href='post_ka.html'">ქარ</button>
+    </div>
+    <div class="container">
+        <h1>ახალი ამბების შექმნა</h1>
+        <form id="newsForm">
+            <div class="form-group">
+                <label for="title">სათაური</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="description">აღწერა</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category" name="category" required>
+                    <option value="">აირჩიეთ კატეგორია</option>
+                    <option value="sports">სპორტი</option>
+                    <option value="politics">პოლიტიკა</option>
+                    <option value="economics">ეკონომიკა</option>
+                    <option value="technology">ტექნოლოგიები</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="editorFirstName">სახელი</label>
+                <input type="text" id="editorFirstName" name="editorFirstName" required>
+            </div>
+            <div class="form-group">
+                <label for="editorLastName">გვარი</label>
+                <input type="text" id="editorLastName" name="editorLastName" required>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn cancel" onclick="location.href='index.html'">გაუქმება</button>
+                <button type="submit" class="btn save">შენახვა</button>
+            </div>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

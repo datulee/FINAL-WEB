@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create News</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="language-switcher">
+        <button onclick="location.href='post.html'">EN</button>
+        <button onclick="location.href='post_ka.html'">ქარ</button>
+    </div>
+    <div class="container">
+        <h1>Create News</h1>
+        <form id="newsForm">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="category">Category</label>
+                select id="category" name="category" required>
+                    <option value="">Select Category</option>
+                    <option value="sports">Sports</option>
+                    <option value="politics">Politics</option>
+                    <option value="economics">Economics</option>
+                    <option value="technology">Technology</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="editorFirstName">First Name</label>
+                <input type="text" id="editorFirstName" name="editorFirstName" required>
+            </div>
+            <div class="form-group">
+                <label for="editorLastName">Last Name</label>
+                <input type="text" id="editorLastName" name="editorLastName" required>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn cancel" onclick="location.href='index.html'">Cancel</button>
+                <button type="submit" class="btn save">Save</button>
+            </div>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
